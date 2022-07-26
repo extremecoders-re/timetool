@@ -1,5 +1,5 @@
 import winim/inc/winbase
-import std/json
+import json
 
 # nim -d:release --opt:size c timetool.nim
 import winim/com
