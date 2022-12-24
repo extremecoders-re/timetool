@@ -18,6 +18,17 @@ When not using `httpclient`, `ssl` support can be omitted
 nim -d:release --opt:size compile timetool.nim
 ```
 
+## Version 2
+
+The second version uses NTP to fetch the current time and is more accurate than using a REST API over HTTP.
+
+```
+nim -d:release -d:strip --opt:size c timetool_v2.nim
+```
+
+For cross-compiling from Linux, specify `-d:mingw`
+
+
 ### Notes
 
 Running the executable as Administrator is necessary to set the system clock on Windows.
